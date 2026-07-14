@@ -1,0 +1,337 @@
+@charset "UTF-8";
+
+/* 全体の設定 */
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(238, 196, 147);
+    width: 100%;
+    
+}
+
+.text_tyuuou{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.img_tyuuou{
+    margin: 0 auto;
+}
+
+/* footerを一番下にする設定 */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 画面全体の高さを最低限確保する */
+}
+
+main {
+  flex: 1; /* 残りのスペースをmainがすべて引き伸ばして埋める */
+}
+
+/** header */
+
+header {
+    background-image: url(../image/試作3.jgp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative; /* 子要素の配置基準 */
+}
+
+/* ナビゲーションメニュー */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* ロゴを左、メニューを右に */
+    align-items: center;
+    background-color: rgb(186, 117, 57); /* 帯の背景色 */
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box
+}
+/* メニューの横並び */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* アイコン、ロゴ */
+.logo {
+    /* 変更箇所: fixedを削除し、flexの子要素として配置 */
+    position: static; 
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+}
+
+/* --- コンセプトテキスト --- */
+.MainConcept {
+    position: absolute;
+    top: 400px;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+
+}
+
+/** main */
+
+/* 背景色 */
+main{
+    background-color: wheat;
+}
+
+main h2{
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+aside{
+    background-color: rgb(238, 196, 147);
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.map{
+    background-color: rgba(254, 255, 240, 0.804);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* 画像と文字を横並びにする */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text_right{
+    text-align: right;
+}
+
+.two_img_right{
+    margin-left:0;
+    order: 2;
+}
+
+.one{
+    order: 1;
+}
+
+
+
+/* 朝営業、夜営業紹介の画像を中央にする。 */
+.eigyou_img{
+    width: 100%;  
+    max-width: 1024px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* 朝営業、夜営業のサイトへの案内ボタン */
+/* 1. 【追加】親の要素を中央揃えにする設定 */
+.eigyou_bottom {
+  text-align: center; /* これでボタンも画像もテキストも全部真ん中に寄ります */
+  width: 100%;
+}
+
+/* 2. ボタン自体の設定 */
+.eigyou_bottom a.eigyou_btn {
+  display: inline-block !important;
+  text-decoration: none !important;
+  text-align: center !important;
+  padding: 12px 30px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  
+  color: #ffffff !important;           /* 文字色（白） */
+  background-color: #be9131 !important;/* 背景色（緑） */
+  box-shadow: 0 5px 0 #be9131 !important; /* 影 */
+  
+  border-radius: 8px !important;
+  margin: 20px 0 !important;           /* 💡 上下の隙間だけに調整しました */
+  transition: all 0.1s ease !important;
+}
+
+/* ホバーしたとき */
+.eigyou_bottom a.eigyou_btn:hover {
+  background-color: #eeb63d !important; /* 💡 ここにも!importantをつけて通常時の色をしっかり上書きします */
+  color: #ffffff !important;
+}
+
+/* 押し込んだとき */
+.eigyou_bottom a.eigyou_btn:active {
+  box-shadow: 0 2px 0 #7c5f20 !important;
+  transform: translateY(3px) !important;
+}
+
+/* マップの位置調整 */
+.map_tyuuou{
+    display:block;
+    margin: 0 auto;
+}
+
+/** footer */
+
+footer{
+    background-color: rgb(245, 224, 205);
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.item{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_img{
+    width: 102px;
+    height: 107px;
+}
+
+h3{
+    margin: 0;
+}
+table {
+    width: 100%;
+}
+
+th{
+    white-space: nowrap;
+}
+
+
+.tyuui{
+  width: fit-content; /* 中身の最大幅に合わせる*/
+  margin: 0 auto;     /*上下は0、左右を自動中央揃え */
+  padding-left: 20px; /* 箇条書きのポインタ（点）のスペース */
+}
+
+.copy{
+text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
+
+/* ページ内リンク */
+#こだわり{
+
+}
+
+#過ごす時間{
+
+}
+
+#空間の秘密{
+
+}
+
+#マップ{
+
+}
+
+#夜営業のご紹介{
+
+}
+
+#朝営業のご紹介{
+
+}
+
+/* スマホ版表示 */
+@media (max-width: 700px) {
+
+    /* header */
+    header{
+        min-height: 400px; 
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 14px;
+        font-size: 0.8rem;
+    }
+    .logo img {
+        width: 50px;
+    }
+    header {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .MainConcept {
+        position: static;
+        margin-top: 150px;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0 15px;
+    }
+    /* main */
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .two_img_right {
+        order: 0; /* 画像を上にしたいので順番をリセット */
+    }
+    .one {
+        order: 1; /* テキストは画像の後(下)に来るように */
+    }
+    main h2 {
+        text-align: center;
+    }
+    .text_right {
+        text-align: center;
+    }
+    /* 朝営業、夜営業の画像調整 */
+    .eigyou_img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center; /* 画像の右側を優先して見せる */
+    }
+    /* マップのサイズ調整 */
+    .map_tyuuou {
+        width: 100%;
+        height: 300px;
+        max-width: 100%;
+    }
+    /* footerの調整 */
+    .footer_container {
+
+        grid-template-columns: 1fr; /* 3列 → 1列に */
+
+        gap: 20px;
+
+    }
+}
