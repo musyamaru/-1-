@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,92 +19,228 @@
 <body>
     <!--! header -->
     <header>
-    <nav>
-        <!-- アイコン表示 -->
-       <a class="logo" href="index.html">
-            <img src="image/きつね喫茶アイコン.png" alt="きつね喫茶のアイコン">
-        </a>
-        
-       <!-- 項目表示 -->
-        <ul class="nav-menu">
-        <li><a href="index.html">ホーム</a></li>
-        <li><a href="#こだわり">こだわり</a></li>
-        <li><a href="#過ごす時間">過ごす時間</a></li>
-        <li><a href="#空間の秘密">空間の秘密</a></li>
-        <li><a href="#通常メニュー(昼)のご紹介">朝営業のご紹介</a></li>
-        <li><a href="#夜営業のご紹介">夜営業のご紹介</a></li>
-        <li><a href="#マップ">マップ</a></li>
-       </ul>
-    </nav>
-    <!-- コンセプトテキスト -->
+        <nav>
+            <!-- アイコン表示 -->
+            <a class="logo" href="index.html">
+                <img src="image/きつね喫茶アイコン.png" alt="きつね喫茶のアイコン">
+            </a>
+
+            <!-- 項目表示 -->
+            <ul class="nav-menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="#こだわり">こだわり</a></li>
+                <li><a href="#過ごす時間">過ごす時間</a></li>
+                <li><a href="#空間の秘密">空間の秘密</a></li>
+                <li><a href="#通常メニュー(昼)のご紹介">朝営業のご紹介</a></li>
+                <li><a href="#夜営業のご紹介">夜営業のご紹介</a></li>
+                <li><a href="#マップ">マップ</a></li>
+            </ul>
+        </nav>
+        <!-- コンセプトテキスト -->
         <p class="MainConcept">「都会の路地裏で、時間（とき）を忘れる、本と珈琲の隠れ家」</p>
     </header>
 
     <!--! main -->
     <main>
-    
+        <!-- カテゴリ -->
+        <h2>お酒と夜の珈琲（Alcohol & Espresso）</h2>
+        <div class="AlcoholEspresso_grid">
+            <!-- コーヒー・ジントニック -->
+            <div class="menyu_item">
+                <img class="img_size" src="image/coffee_gintonic.png" alt="コーヒー・ジントニックの画像">
+                <div class="menyu_body">
+                    <p class="menyu_name">コーヒー・ジントニック</p>
+                    <p class="menyu_price">¥800</p>
+                    <p class="menyu_describe">厳選したクラフトジンに、水出し珈琲の濃縮液を落とした、すっきりとした苦味の特製カクテル。</p>
+                </div>
+            </div>
+
+            <!-- アイリッシュ・コーヒー -->
+            <div class="menyu_item">
+                <img class="img_size" src="image/airissyu.png" alt="アイリッシュ・コーヒーの画像">
+                <div class="menyu_body">
+                    <p class="menyu_name">アイリッシュ・コーヒー</p>
+                    <p class="menyu_price">¥850</p>
+                    <p class="menyu_describe">自家焙煎珈琲にアイリッシュウイスキーと生クリームを合わせた、寒い夜にぴったりの温かいカクテル。</p>
+                </div>
+            </div>
+
+            <!-- 焙じ茶ラムラテ -->
+            <div class="menyu_item">
+                <img class="img_size" src="image/hojicha_rum.png" alt="焙じ茶ラムラテの画像">
+                <div class="menyu_body">
+                    <p class="menyu_name">焙じ茶ラムラテ</p>
+                    <p class="menyu_price">¥780</p>
+                    <p class="menyu_describe">香ばしいほうじ茶ラテに、ほんのりダークラムを利かせた夜限定のメニュー（ノンアルコールに変更可）。</p>
+                </div>
+            </div>
+
+            <!-- 路地裏のウイスキー -->
+            <div class="menyu_item">
+                <img class="img_size" src="image/whisky.png" alt="路地裏のウイスキーの画像">
+                <div class="menyu_body">
+                    <p class="menyu_name">路地裏のウイスキー（今月のシングルモルト）</p>
+                    <p class="menyu_price">¥900</p>
+                    <p class="menyu_describe">本棚の古書を眺めながら、ストレートやロックで静かに味わうためのスコッチウイスキー。</p>
+                </div>
+            </div>
+
+            <!-- 地ビール（ペールエール / スタウト）-->
+            <div class="menyu_item">
+                <img class="img_size" src="image/beer.png" alt="地ビールの画像">
+                <div class="menyu_body">
+                    <p class="menyu_name">地ビール（ペールエール / スタウト）</p>
+                    <p class="menyu_price">¥750</p>
+                    <p class="menyu_describe">珈琲のロースト感とも相性の良い、深みのあるクラフトビール。</p>
+                </div>
+            </div>
+
+            <!-- カテゴリ -->
+            <h2>夜の甘味（Night Sweets）</h2>
+            <div class="NightSweets_grid">
+                <!-- 季節の自家製スコーン -->
+                <div class="menyu_item">
+                    <img class="img_size" src="image/scone.png" alt="季節の自家製スコーン（ラムレーズン＆クリーム付き）の画像">
+                    <div class="menyu_body">
+                        <p class="menyu_name">季節の自家製スコーン（ラムレーズン＆クリーム付き）</p>
+                        <p class="menyu_price">¥500</p>
+                        <p class="menyu_describe">昼も人気のサクサクのスコーンに、夜は少し大人のラムレーズンを添えて。</p>
+                    </div>
+                </div>
+
+                <!-- ほろ苦珈琲ゼリーのミニパルフェ -->
+                <div class="menyu_item">
+                    <img class="img_size" src="image/coffee_jelly.png" alt="ほろ苦珈琲ゼリーのミニパルフェの画像">
+                    <div class="menyu_body">
+                        <p class="menyu_name">ほろ苦珈琲ゼリーのミニパルフェ</p>
+                        <p class="menyu_price">¥700</p>
+                        <p class="menyu_describe">自家焙煎豆を使用した濃厚なゼリーに、バニラアイスとリキュール香るソースを合わせた一品。</p>
+                    </div>
+                </div>
+
+                <!-- 濃厚チョコレートブラウニー -->
+                <div class="menyu_item">
+                    <img class="img_size" src="image/brownie.png" alt="濃厚チョコレートブラウニーの画像">
+                    <div class="menyu_body">
+                        <p class="menyu_name">濃厚チョコレートブラウニー</p>
+                        <p class="menyu_price">¥600</p>
+                        <p class="menyu_describe">ウイスキーや深煎り珈琲の最高の相棒。ナッツの食感がアクセント。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- カテゴリ -->
+            <h2>小皿（Appetizer / Light Meal）</h2>
+            <div class="AppetizerLightMeal_grid">
+                <!-- 燻製ナッツとドライフルーツの盛り合わせ -->
+                <div class="menyu_item">
+                    <img class="img_size" src="image/smoked_nuts.png" alt="燻製ナッツとドライフルーツの盛り合わせの画像">
+                    <div class="menyu_body">
+                        <p class="menyu_name">燻製ナッツとドライフルーツの盛り合わせ</p>
+                        <p class="menyu_price">¥550</p>
+                        <p class="menyu_describe">ウイスキーやビールが進む、スモーキーに仕上げたミックスナッツ。</p>
+                    </div>
+                </div>
+
+                <!-- きつねの気まぐれカツサンド -->
+                <div class="menyu_item">
+                    <img class="img_size" src="image/katsu_sandwich.png" alt="きつねの気まぐれカツサンドの画像">
+                    <div class="menyu_body">
+                        <p class="menyu_name">きつねの気まぐれカツサンド</p>
+                        <p class="menyu_price">¥850</p>
+                        <p class="menyu_describe">小腹が空いた夜に嬉しい、ジューシーなカツを挟んだ少し贅沢な軽食。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- カテゴリ -->
+            <h2>夜のおひとり様セット（Night Set for One）</h2>
+            <div class="NightSet_grid">
+            <!-- 夜の読書とご褒美セット -->
+                <div class="menyu_item">
+                    <img class="img_size" src="image/go_houbi_set.png" alt="夜の読書とご褒美セットの写真">
+                    <div class="menyu_body">
+                        <p class="menyu_name">夜の読書とご褒美セット</p>
+                        <p class="menyu_price">¥1,350</p>
+                        <p class="menyu_describe">【お好きな夜のドリンク ＋ お好きな夜の甘味
+                            1種】<br>今日一日がんばった自分へ。お酒や夜限定ラテに、少し大人なスイーツを合わせた静かな夜のためのセットです。</p>
+                    </div>
+                </div>
+
+            <!-- 路地裏の寄り道セット -->
+                <div class="menyu_item">
+                    <img class="img_size" src="image/yorimichi_set.png" alt="路地裏の寄り道セットの写真">
+                    <div class="menyu_body">
+                        <p class="menyu_name">路地裏の寄り道セット</p>
+                        <p class="menyu_price">¥1,400</p>
+                        <p class="menyu_describe">【お好きなアルコールドリンク ＋
+                            燻製ナッツとドライフルーツ】<br>レコードの音を聴きながら、本を片手に少しずつつまむ。そんな一人の時間を豊かにする、おつまみとお酒のセット。</p>
+                    </div>
+                </div>
+            </div>
     </main>
 
     <!--! footer -->
     <footer>
-    <div class="footer_container">
-        <div class="item">
-        <!-- アイコン表示 -->
-        <img src="image/きつね喫茶アイコン.png" calt="きつね喫茶のアイコン"class="icon_img">
+        <div class="footer_container">
+            <div class="item">
+                <!-- アイコン表示 -->
+                <img src="image/きつね喫茶アイコン.png" calt="きつね喫茶のアイコン" class="icon_img">
 
-        <!-- インスタ -->
-        <a href="https://www.instagram.com/p/DavCyarP1g-/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="><img src="image/icons8-インスタグラム-48.png" alt="インスタグラムのアイコン"></a>
-        </div>
+                <!-- インスタ -->
+                <a href="https://www.instagram.com/p/DavCyarP1g-/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="><img
+                        src="image/icons8-インスタグラム-48.png" alt="インスタグラムのアイコン"></a>
+            </div>
 
-        <!-- 目次 -->
-         <div class="item">
-       <ul><h2>目次</h2>
-        <li><a href="index.html">ホーム</a></li>
-        <li><a href="#こだわり">こだわり</a></li>
-        <li><a href="#過ごす時間">過ごす時間</a></li>
-        <li><a href="#空間の秘密">空間の秘密</a></li>
-        <li><a href="#通常メニュー(昼)のご紹介">通常メニュー(昼)のご紹介</a></li>
-        <li><a href="#夜営業のご紹介">夜営業のご紹介</a></li>
-        <li><a href="#マップ">マップ</a></li>
-       </ul>
-       </div>
+            <!-- 目次 -->
+            <div class="item">
+                <ul>
+                    <h2>目次</h2>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="#こだわり">こだわり</a></li>
+                    <li><a href="#過ごす時間">過ごす時間</a></li>
+                    <li><a href="#空間の秘密">空間の秘密</a></li>
+                    <li><a href="#通常メニュー(昼)のご紹介">通常メニュー(昼)のご紹介</a></li>
+                    <li><a href="#夜営業のご紹介">夜営業のご紹介</a></li>
+                    <li><a href="#マップ">マップ</a></li>
+                </ul>
+            </div>
 
 
-       <!-- 表 -->
-        <table>
-        <tr>
-            <th>営業時間</th>
-            <td>11:00~18:00</td>
-        </tr>
-        <tr>
-            <th>定休日</th>
-            <td>火、木、土日祝</td>
-        </tr>
-        <tr>
-            <th>電話番号</th>
-            <td>000-0000-000</td>
-        </tr>
-        <tr>
-            <th>住所</th>
-            <td>※所在地はサンプルです。</td>
-        </tr>
-        </table>
+            <!-- 表 -->
+            <table>
+                <tr>
+                    <th>営業時間</th>
+                    <td>11:00~18:00</td>
+                </tr>
+                <tr>
+                    <th>定休日</th>
+                    <td>火、木、土日祝</td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td>000-0000-000</td>
+                </tr>
+                <tr>
+                    <th>住所</th>
+                    <td>※所在地はサンプルです。</td>
+                </tr>
+            </table>
         </div>
         <!-- 注意書き -->
-         <div class="tyuui">
-         <ul>
-            <li>※荒天日や機械のメンテナンス日にお休みとなります。</li>
-            <li>※営業時間については変更になる場合がございます。</li>
-            <li>※お車でお越しのお客さまは、提携駐車場(サンプル)をご利用ください。</li>
-        </ul>
+        <div class="tyuui">
+            <ul>
+                <li>※荒天日や機械のメンテナンス日にお休みとなります。</li>
+                <li>※営業時間については変更になる場合がございます。</li>
+                <li>※お車でお越しのお客さまは、提携駐車場(サンプル)をご利用ください。</li>
+            </ul>
         </div>
 
-        
+
         <!-- コピーライト -->
-         <div class="copy">
-        <p>&copy; 2026 きつね喫茶</p>
-        <p>このサイトは学習・ポートフォリオ目的で制作した架空のWebサイトです。実在する店舗・団体とは関係ありません。</p>
+        <div class="copy">
+            <p>&copy; 2026 きつね喫茶</p>
+            <p>このサイトは学習・ポートフォリオ目的で制作した架空のWebサイトです。実在する店舗・団体とは関係ありません。</p>
         </div>
     </footer>
 </body>
+
 </html>

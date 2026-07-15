@@ -33,15 +33,6 @@ main {
 
 /** header */
 
-/* header {
-    background-image: url(../image/試作3.jgp.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    position: relative; 
-} */
-
 /* ナビゲーションメニュー */
 nav {
     position: sticky;
@@ -91,7 +82,54 @@ nav {
 }
 
 /** main */
+/* カテゴリ分け */
+.AlcoholEspresso_grid{
+    display: grid;
+    grid-template-columns: repeat()1fr,1fr,1fr;
+    gap: 30px;
+}
+.NightSweets_grid{
+    display: grid;
+    grid-template-columns: repeat()1fr,1fr,1fr;
+    gap: 30px;
+}
+.AppetizerLightMeal_grid{
+    display: grid;
+    grid-template-columns: repeat()1fr,1fr,1fr;
+    gap: 30px; 
+}
+.AfternoonSweets_grid{
+    display: grid;
+    grid-template-columns: repeat()1fr,1fr,1fr;
+    gap: 30px; 
+}
+.NightSet_grid{
+    display: grid;
+    grid-template-columns: repeat()1fr,1fr,1fr;
+    gap: 30px; 
+}
+/* 商品 */
+.menyu_item{
+    display: flex;
+    flex-direction: column;
+}
+/* 画像調整 */
+.img_size{
+    width: 150px;
+    height: auto;
+}
+/* 商品名 */
+.menyu_name{
+    font-weight: 450;
+}
+/* 商品価格 */
+.menyu_price{
 
+}
+/* 商品説明 */
+.menyu_describe{
+
+}
 
 
 /** footer */
