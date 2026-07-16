@@ -82,24 +82,26 @@ nav {
 }
 
 /* --- コンセプトテキスト --- */
-.MainConcept {
+/* .MainConcept {
     position: absolute;
     top: 400px;
     font-size: 2rem;
     color: #FFFFFF;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
-}
+} */
 
 /** main */
 /* カテゴリ分け */
-.CoffeeTea_grid{
-    display: grid;
-    grid-template-columns: repeat()1fr,1fr,1fr;
-    gap: 30px;
+.main_grid{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
+.CoffeeTea_grid,
+.AfternoonSweets_grid,
 .LightMeal_grid{
     display: grid;
-    grid-template-columns: repeat()1fr,1fr,1fr;
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
 /* 商品 */

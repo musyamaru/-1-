@@ -72,41 +72,21 @@ nav {
     width: 80px;
 }
 
-/* --- コンセプトテキスト --- */
-.MainConcept {
-    position: absolute;
-    top: 400px;
-    font-size: 2rem;
-    color: #FFFFFF;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
-}
-
 /** main */
 /* カテゴリ分け */
-.AlcoholEspresso_grid{
-    display: grid;
-    grid-template-columns: repeat()1fr,1fr,1fr;
-    gap: 30px;
+.main_grid{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
-.NightSweets_grid{
-    display: grid;
-    grid-template-columns: repeat()1fr,1fr,1fr;
-    gap: 30px;
-}
-.AppetizerLightMeal_grid{
-    display: grid;
-    grid-template-columns: repeat()1fr,1fr,1fr;
-    gap: 30px; 
-}
-.AfternoonSweets_grid{
-    display: grid;
-    grid-template-columns: repeat()1fr,1fr,1fr;
-    gap: 30px; 
-}
+.AlcoholEspresso_grid,
+.NightSweets_grid,
+.AppetizerLightMeal_grid,
+.AfternoonSweets_grid,
 .NightSet_grid{
     display: grid;
-    grid-template-columns: repeat()1fr,1fr,1fr;
-    gap: 30px; 
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
 }
 /* 商品 */
 .menyu_item{
