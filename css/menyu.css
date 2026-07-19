@@ -33,15 +33,6 @@ main {
 
 /** header */
 
-/* header {
-    background-image: url(../image/試作3.jgp.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    position: relative; 
-} */
-
 /* ナビゲーションメニュー */
 nav {
     position: sticky;
@@ -209,15 +200,12 @@ text-align: center;
 @media (max-width: 700px) {
 
     /* header */
-    header{
-        min-height: 400px; 
-    }
-
     nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
+
     .nav-menu {
         flex-wrap: wrap;
         justify-content: center;
@@ -227,10 +215,12 @@ text-align: center;
     .logo img {
         width: 50px;
     }
+
     header {
         height: auto;
         padding-bottom: 30px;
     }
+    
     .MainConcept {
         position: static;
         margin-top: 150px;
